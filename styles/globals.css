@@ -3,10 +3,12 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
 
 body{
   font-family: 'Roboto', sans-serif;
 }
 .russo-font{
   font-family: 'Russo One', sans-serif;
+  /* font-family: 'Lato', sans-serif; */
 }

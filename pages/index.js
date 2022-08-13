@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import About from '../components/About'
 import Hero from '../components/Hero'
 
 export default function Home() {
@@ -12,6 +13,8 @@ export default function Home() {
       <main>
        {/* === Hero section === */}
         <Hero />
+       {/* === About section === */}
+       <About />
       </main>
     </div>
   )

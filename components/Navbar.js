@@ -56,12 +56,12 @@ const Navbar = () => {
     ]
    
   return (
-    <nav className='py-2 flex flex-wrap justify-between px-[5%] shadow-sm items-center'>
+    <nav className='sticky top-0 z-50 shadow-lg py-2 bg-white flex flex-wrap justify-between px-[5%] items-center'>
         <div className="logo">
             <Image src='/images/logo/logo_jagger.png' height={40} width={40} alt='logo' />
         </div>
 
-        <button onClick={()=> setOpenNav(!openNav)} className={`block md:hidden text-2xl font-bold text-blue-700`}>
+        <button onClick={()=> setOpenNav(!openNav)} className={`block md:hidden text-2xl font-bold text-sky-600`}>
             {openNav ? <AiOutlineClose /> :   <FaBars />}
         </button>
  
@@ -71,7 +71,7 @@ const Navbar = () => {
                     navItems.map((item)=> { 
                         return (
                         <Link  href={item.url} key={item.id}>
-                            <li onClick={()=> setActive(item.name)} className={`font-semibold hover:text-blue-600 ${active == item.name && `text-blue-600`} hover:font-semibold flex gap-3 md:gap-1  md:flex-col justify-start md:justify-center items-center animate duration-500 ease-in-out sm:my-0 my-2`}>
+                            <li onClick={()=> setActive(item.name)} className={`font-semibold hover:text-sky-600 ${active == item.name && `text-sky-600`} hover:font-semibold flex gap-3 md:gap-1  md:flex-col justify-start md:justify-center items-center animate duration-500 ease-in-out sm:my-0 my-2`}>
                                 {item.icon}
                                 <a >{item.name}</a>
                             </li>
