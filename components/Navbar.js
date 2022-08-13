@@ -61,12 +61,12 @@ const Navbar = () => {
             <Image src='/images/logo/logo_jagger.png' height={40} width={40} alt='logo' />
         </div>
 
-        <button onClick={()=> setOpenNav(!openNav)} className={`block md:hidden text-2xl font-bold text-gray-600`}>
+        <button onClick={()=> setOpenNav(!openNav)} className={`block md:hidden text-2xl font-bold text-blue-700`}>
             {openNav ? <AiOutlineClose /> :   <FaBars />}
         </button>
  
         <div onClick={()=> setOpenNav(!openNav)} className={`menu ${openNav ? `absolute md:relative top-0 right-0 mt-[60px] bg-white rounded-md` : `hidden`} md:block sm:mt-0 `}>
-            <ul className='uppercase py-2 px-10 cursor-pointer rounded-full text-gray-600 flex flex-col md:flex-row gap-5 sm:gap-10 text-md md:text-base'>
+            <ul className='uppercase py-2 px-10 cursor-pointer rounded-full text-gray-500 flex flex-col md:flex-row gap-5 sm:gap-10 text-md md:text-base'>
                     {
                     navItems.map((item)=> { 
                         return (
