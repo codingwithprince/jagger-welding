@@ -11,7 +11,7 @@ const Location = () => {
                     2000 Maribor <br />
                     Slovenia</p>
              </div>
-             <iframe className='w-full h-[400px]' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2743.353539531223!2d15.661212415841105!3d46.56047357912917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476f77039e216d55%3A0xf4b50d3dbf0007df!2sJagger%2C%20proizvodno%20in%20storitveno%20podjetje%2C%20d.o.o.!5e0!3m2!1sen!2sbd!4v1660487045779!5m2!1sen!2sbd"  loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+             <iframe className='w-full h-[400px]' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2743.353539531223!2d15.661212415841105!3d46.56047357912917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476f77039e216d55%3A0xf4b50d3dbf0007df!2sJagger%2C%20proizvodno%20in%20storitveno%20podjetje%2C%20d.o.o.!5e0!3m2!1sen!2sbd!4v1660487045779!5m2!1sen!2sbd"  loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
             
         </div>
     </div>
