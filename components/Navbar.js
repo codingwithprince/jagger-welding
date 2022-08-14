@@ -5,10 +5,11 @@ import { AiOutlineHome, AiOutlineClose, AiOutlineBars} from 'react-icons/ai'
 import { BsFillGearFill } from 'react-icons/bs'
 import { FaPeopleCarry, FaBars } from 'react-icons/fa'
 import { IoIosConstruct, IoIosCloudDone } from 'react-icons/io'
-import { IoHome } from 'react-icons/io5'
+import { IoHome, IoLocationSharp } from 'react-icons/io5'
 import { MdWifiCalling3, MdPeopleAlt } from 'react-icons/md'
 import { BiPhoneCall } from 'react-icons/bi'
 import { imageConfigDefault } from 'next/dist/shared/lib/image-config'
+import  { RiGalleryLine } from 'react-icons/ri'
 
 
 
@@ -26,21 +27,21 @@ const Navbar = () => {
         },
         {
             id:2,
-            name: 'Portfolio',
-            url: '#portfolio',
-            icon: <IoIosCloudDone />,
+            name: 'Gallery',
+            url: '#gallery',
+            icon: <RiGalleryLine />,
         },
         {
             id:3,
             name: 'Services',
             url: '#services',
-            icon: <BsFillGearFill />
+            icon: <IoIosConstruct />
         },
         {
             id:4,
-            name: 'Workers',
-            url: '#workers',
-            icon: <FaPeopleCarry />
+            name: 'Location',
+            url: '#location',
+            icon: <IoLocationSharp />
         },
         {
             id:5,
