@@ -30,7 +30,7 @@ const About = () => {
             <p className="about-text text-gray-600 text-justify text-md md:text-lg mb-5 md:w-[60%]">
             The <span className='bg-yellow-300 text-black font-semibold px-1'>Jagger d.o.o.</span>  Company specialises in complex welding and installation services in industrial facilities and power plants. With our own highly qualified staff, we can carry out complex tasks in the fields of energy, industry and transport. Welders and pipe workers have knowledge on isometry and hold appropriate and valid certificates in accordance with international standards for various materials and welding techniques, which are periodically renewed.
             </p>
-            <div className="about-img mx-10 p-2 w-[300px] md:w-auto">
+            <div className="about-img p-2 max-w-[320px] md:w-auto">
               <Carousel autoPlay={true} infiniteLoop={true}>
                 {
                   images.map(item => {
