@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { AiOutlineHome, AiOutlineClose, AiOutlineBars} from 'react-icons/ai'
+import { AiOutlineHome,AiOutlineFileDone, AiOutlineClose, AiOutlineBars} from 'react-icons/ai'
 import { BsFillGearFill } from 'react-icons/bs'
 import { FaPeopleCarry, FaBars } from 'react-icons/fa'
 import { IoIosConstruct, IoIosCloudDone } from 'react-icons/io'
@@ -27,9 +27,9 @@ const Navbar = () => {
         },
         {
             id:2,
-            name: 'Gallery',
-            url: '#gallery',
-            icon: <RiGalleryLine />,
+            name: 'Projects',
+            url: '#projects',
+            icon: <AiOutlineFileDone />,
         },
         {
             id:3,

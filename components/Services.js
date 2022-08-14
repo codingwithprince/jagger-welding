@@ -57,12 +57,26 @@ const Services = () => {
         {
             id:1,
             title: 'manual electric-arc welding',
-            desc: 'Manual Metal Arc (MMA) welding is the most flexible and one of the most widely used arc welding processes'
+            desc: 'Manual Metal Arc (MMA) welding is the most flexible and one of the most widely used arc welding processes',
+            img: '/images/services/s-3.jpg'
         },
         {
             id:2,
             title: 'aluminium welding',
-            desc: ' GTAW is a great process for aluminum because it does not require mechanical wire feeding, which can create feedability issues.'
+            desc: ' GTAW is a great process for aluminum because it does not require mechanical wire feeding, which can create feedability issues.',
+            img: '/images/services/s-2.jpg'
+        },
+        {
+            id:3,
+            title: 'solid wire welding',
+            desc: 'Mild steel solid wires are to prevent oxidation, aid in electrical conductivity and help increase the life of the welding contact tip.',
+            img: '/images/services/s-4.jpg'
+        },
+        {
+            id:4,
+            title: 'Carbon welding',
+            desc: 'Mild steel solid wires are to prevent oxidation, aid in electrical conductivity and help increase the life of the welding contact tip.',
+            img: '/images/services/s-5.jpg'
         }
     ]
   return (
@@ -73,14 +87,14 @@ const Services = () => {
                 serviceList.map(item => {
                     return (
                         <div key={item.id} className="s-card w-[300px] bg-white grid justify-items-center shadow-xl py-10 px-5 rounded-xl m-3 hover:shadow-2xl hover:scale-105 ease-in-out duration-300">
-                            <div className="card-header text-sky-500 text-6xl py-3">
-                                <IoIosConstruct />
+                            <div className="card-header text-sky-500 text-6xl pt-3">
+                                <img className='h-[100px] w-[100px]' src={item.img} alt={item.title} />
                             </div>
-                            <div className="s-card-text py-5">
+                            <div className="s-card-text pt-5">
                                 <h3 className="title text-gray-700 text-center font-semibold capitalize text-lg">
                                     {item.title}
                                 </h3>
-                                <p className='px-2 py-5 text-justify text-gray-500 text-sm'>
+                                <p className='px-2 pt-5 text-justify text-gray-500 text-sm'>
                                     {
                                         item.desc
                                     }
