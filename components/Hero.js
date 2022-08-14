@@ -13,11 +13,11 @@ const Hero = () => {
         backgroundPosition: 'cover'
         }}
     >
-        <div className="overlay h-full flex w-full justify-center md:justify-end items-center text-white px-[2%] md:px-20">
+        <div id='home' className="overlay h-full flex w-full justify-center md:justify-end items-center text-white px-[2%] md:px-20">
             <div className="text-overlay text-center md:text-left w-full md:w-[50%] p-2">
-                <h1 className='text-6xl inline-block p-2  w-full md:text-8xl animate-bounce uppercase russo-font gap-5 font-bold text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-300'>Jagger</h1>
+                <h1 className='text-6xl inline-block py-2  w-full md:text-8xl animate-bounce uppercase russo-font gap-5 font-bold text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-300'>Jagger</h1>
                 {/* bg-gradient-to-b from-sky-500 to-sky-700 */}
-                <div className='text-6xl font-bold rounded-sm text-transparent bg-clip-text bg-gradient-to-t from-sky-500 to-sky-300  p-2 md:text-8xl uppercase russo-font'>
+                <div className='text-6xl font-bold rounded-sm text-transparent bg-clip-text bg-gradient-to-t from-sky-500 to-sky-300  py-2 md:text-8xl uppercase russo-font'>
                 <TypeAnimation
                       sequence={['Welding', 4000, 'd.o.o', 4000]}
                       speed={40} // Must be in range between 1 and 99!

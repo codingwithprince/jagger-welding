@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import About from '../components/About'
 import Hero from '../components/Hero'
+import Services from '../components/Services'
 
 export default function Home() {
   return (
@@ -15,6 +16,8 @@ export default function Home() {
         <Hero />
        {/* === About section === */}
        <About />
+       {/* === Services section === */}
+       <Services />
       </main>
     </div>
   )
