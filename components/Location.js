@@ -7,7 +7,7 @@ const Location = () => {
         <div className="text-center w-full">
         <div className="text-location">
                 <p className='text-2xl text-sky-700 font-bold underline'>Jagger d.o.o.</p>
-                <p className='text-md bg-yellow-200 font-semibold py-1 my-5 text-gray-700'>Meljska cesta 36 <br />
+                <p className='text-md bg-yellow-200 font-semibold py-1 my-10 text-gray-700'>Meljska cesta 36 <br />
                     2000 Maribor <br />
                     Slovenia</p>
              </div>
