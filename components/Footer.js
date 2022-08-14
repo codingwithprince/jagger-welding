@@ -28,7 +28,7 @@ const Footer = () => {
     <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
     <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 <a href="https://jagger-welding.com" className="hover:underline">Jagger d.o.o</a>. All Rights Reserved.
     </span>
-    <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400 mt-3">Made By <a target='_' href="https://www.facebook.com/profile.php?id=100008591616145" className="hover:text-sky-500 underline">Prince</a> ❤️
+    <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400 mt-3 mb-5">Made By <a target='_' href="https://www.facebook.com/profile.php?id=100008591616145" className="hover:text-sky-500 underline">Prince</a> ❤️
     </span>
 </div>
 

@@ -1,5 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
 import React from 'react';
-import Image from 'next/image'
 
 const Services = () => {
     const services = [
@@ -46,8 +46,8 @@ const Services = () => {
     <div id="services" className='services py-[20px] px-[5%]'>
          <h3 className='font-bold text-center text-gray-700 text-2xl md:text-4xl mb-5'>Services</h3>
          <div className="grid grid-cols-1 md:grid-cols-2 justify-items-center items-center py-5">
-            <div className="gif-welding p-2">
-                <Image src='/images/features/moving-welding.gif' width={420} height={400} alt='' />
+            <div className="gif-welding p-2 hover:scale-105 animate duration-500 ease-in-out">
+                <img className='w-[400px]' src='/images/features/toon-welding.png' alt='' />
             </div>
             <div className="services-text mx-auto">
                 <h5 className='text-gray-800 font-bold text-lg'>We carry out the following welding processes</h5>
