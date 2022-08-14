@@ -72,13 +72,14 @@ const Navbar = () => {
                     navItems.map((item)=> { 
                         return (
                             <Link
+                            onClick={()=> setOpenNav(!openNav)}
                             key={item.id}
                             activeClass="active"
                             to={item.url}
                             spy={true}
                             smooth={true}
                             offset={-100}
-                            duration={500}>
+                            duration={400}>
                                <li onClick={()=> setActive(item.name)} className={`font-semibold hover:text-sky-600 ${active == item.name && `text-sky-600`} hover:font-semibold flex gap-3 md:gap-1  md:flex-col justify-start md:justify-center items-center animate duration-500 ease-in-out sm:my-0 my-2`}>
                                  {item.icon}
                                     <a >{item.name}</a>
