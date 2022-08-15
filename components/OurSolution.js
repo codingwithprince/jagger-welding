@@ -41,7 +41,7 @@ const OurSolution = () => {
             {
                 solutions.map(item => {
                     return(
-                        <div key={item.id} className="solution-card m-2 ">
+                        <div key={item.id} className="solution-card m-2">
                             <div className="solution-img relative w-[120px] md:w-[280px]">
                                 <img className='w-full hover:shadow-xl rounded-xl' src={item.img} alt="" />
                                 <p className='absolute text-xs md:text-lg top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-sky-600 bg-opacity-50 hover:bg-opacity-80 py-1 md:py-3 w-full text-center text-white'>{item.name}</p>

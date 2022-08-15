@@ -8,7 +8,7 @@ const Footer = () => {
     <div className="sm:flex sm:items-center sm:justify-between py-5">
         <a href="#home" className="flex items-center mb-4 sm:mb-0">
             <Image src="/images/logo/logo_jagger.png" className="mr-3 h-8" alt="jagger-welding Logo" width={50} height={50} />
-            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white pl-3">Jagger-welding</span>
+            <span className="text-gray-300 text-2xl pl-3">Jagger-welding</span>
         </a>
         <ul className="flex flex-wrap items-center mb-6 text-sm text-gray-500 sm:mb-0 dark:text-gray-400">
             <li>

@@ -27,30 +27,24 @@ const Navbar = () => {
         },
         {
             id:2,
-            name: 'Projects',
-            url: '#projects',
-            icon: <AiOutlineFileDone />,
-        },
-        {
-            id:3,
             name: 'Services',
             url: '#services',
             icon: <IoIosConstruct />
         },
         {
-            id:4,
+            id:3,
             name: 'Location',
             url: '#location',
             icon: <IoLocationSharp />
         },
         {
-            id:5,
+            id:4,
             name: 'Contact',
             url: '#footer',
             icon: <MdWifiCalling3 />
         },
         {
-            id:6,
+            id:5,
             name: 'About',
             url: '#about',
             icon: <MdPeopleAlt />
