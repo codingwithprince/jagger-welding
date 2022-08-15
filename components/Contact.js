@@ -40,7 +40,7 @@ const Contact = () => {
                     </button>
                 </form>
             </div>
-            <div data-aos='fade-up' className="contact-info mt-5">
+            <div data-aos='fade-up' className="contact-info mt-5 ">
                 <p className='text-2xl font-semibold text-gray-600 flex items-center gap-2'> <IoLocationSharp /> JAGGER d.o.o.</p>
                 <p className='text-gray-500 mt-2'>Meljska cesta 36 </p>
                 <p className='text-gray-500'>2000 Maribor</p>
