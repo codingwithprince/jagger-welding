@@ -37,7 +37,7 @@ const OurSolution = () => {
             Or use the button below to find all our products.</p>
             <button className='shadow-xl mt-5 bg-gradient-to-b hover:bg-gradient-to-t from-sky-500 to-sky-700 px-5 py-2 text-white rounded-md'>All Products</button>
         </div>
-        <div data-aos="fade-up" className="our-solution-items my-3 flex flex-wrap justify-center">
+        <div data-aos="fade-up" className="our-solution-items my-5 flex flex-wrap justify-center">
             {
                 solutions.map(item => {
                     return(
