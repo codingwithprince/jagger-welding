@@ -7,6 +7,9 @@ import { IoCallSharp, IoMailSharp } from 'react-icons/io5';
 
 const images = [
     {
+      image: 'images/bg/PipeWelding.jpg',
+    },
+    {
         image: 'images/features/w-1.jpg',
     },
     {
@@ -18,13 +21,13 @@ const images = [
 ];
 const Hero = () => {
   return (
-    <div id='home' className="h-[60vh] relative"> 
+    <div id='home' className="h-[70vh] relative"> 
            <Carousel autoPlay={true} infiniteLoop={true} showThumbs={false} showArrows={false} showStatus={false} showIndicators={false}>
                 {
                   images.map(item => {
                     return(
                       <div key={item.id}>
-                       <img className='shadow-full object-cover h-[60vh]' src={item.image} alt='jagger-welding-man-welding'/>
+                       <img className='shadow-full object-cover h-[70vh]' src={item.image} alt='jagger-welding-man-welding'/>
                         {/* <p className="legend bg-pink-500">Jagger d.o.o</p> */}
                       </div>
                     )
