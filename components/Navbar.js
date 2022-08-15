@@ -40,7 +40,7 @@ const Navbar = () => {
         {
             id:4,
             name: 'Contact',
-            url: '#footer',
+            url: '#contact',
             icon: <MdWifiCalling3 />
         },
         {
