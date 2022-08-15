@@ -54,7 +54,7 @@ const Navbar = () => {
   return (
     <nav className='sticky top-0 z-50 shadow-lg py-2 bg-white flex flex-wrap justify-between px-[5%] items-center'>
         <div className="logo">
-            <Image src='/images/logo/logo_jagger.png' height={40} width={40} alt='logo' />
+            <Image src='/images/logo/logo.png' height={40} width={40} alt='logo' />
         </div>
 
         <button onClick={()=> setOpenNav(!openNav)} className={`block md:hidden text-2xl font-bold text-sky-600`}>
