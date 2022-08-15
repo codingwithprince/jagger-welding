@@ -4,7 +4,7 @@ const Footer = () => {
   return ( 
 <> 
     
-<div id="footer" className="p-4 bg-white shadow md:px-6 md:py-8 dark:bg-gray-900">
+<div id="footer" className="p-4  md:px-6 md:py-8 bg-gray-900">
     <div className="sm:flex sm:items-center sm:justify-between py-5">
         <a href="#home" className="flex items-center mb-4 sm:mb-0">
             <Image src="/images/logo/logo_jagger.png" className="mr-3 h-8" alt="jagger-welding Logo" width={50} height={50} />

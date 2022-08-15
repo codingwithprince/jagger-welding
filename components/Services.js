@@ -75,12 +75,12 @@ const Services = () => {
     ]
   return (
     <div id="services" className='services py-[20px] pb-[50px] px-[5%] bg-slate-100'>
-         <h3 className='font-bold text-center text-gray-700 text-2xl md:text-4xl pb-10'>Services</h3>
+         <h3 data-aos="fade-up" className='font-bold text-center text-gray-700 text-2xl md:text-4xl pb-10'>Services</h3>
          <div className="service-cards flex flex-wrap justify-center ">
             {
                 serviceList.map(item => {
                     return (
-                        <div key={item.id} className="s-card text-gray-700 hover:text-[#006bb6] w-[350px] bg-white  flex flex-col items-center shadow-xl  px-5 rounded-xl m-3 hover:shadow-2xl hover:scale-105 ease-in-out duration-300 p-5">
+                        <div key={item.id} data-aos="fade-up" className="s-card text-gray-700 hover:text-[#006bb6] w-[350px] bg-white  flex flex-col items-center shadow-xl  px-5 rounded-xl m-3 hover:shadow-2xl hover:scale-105 ease-in-out duration-300 p-5">
                             <div className="card-header flex flex-col items-center justify-center h-[150px] w-[150px] rounded-full text-6xl">
                                 <img className='w-[65px]'  src={item.img} alt={item.title} />
                             </div>

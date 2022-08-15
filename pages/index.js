@@ -1,11 +1,20 @@
 import Head from 'next/head'
+import { useEffect } from 'react'
 import About from '../components/About'
 import Hero from '../components/Hero'
 import Location from '../components/Location'
 import OurSolution from '../components/OurSolution'
 import Services from '../components/Services'
+import AOS from 'aos'
+import 'aos/dist/aos.css';
 
 export default function Home() {
+  useEffect(()=>{
+    AOS.init({
+      duration: 600
+    });
+  },[])
+
   return (
     <div>
       <Head>
@@ -17,7 +26,7 @@ export default function Home() {
        {/* === Hero section === */}
         <Hero />
        {/* === Services section === */}
-        <Services />
+        <Services   />
        {/* === Our Solution section === */}
         <OurSolution />
        {/* === Location section */}
