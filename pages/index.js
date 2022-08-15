@@ -2,6 +2,7 @@ import Head from 'next/head'
 import About from '../components/About'
 import Hero from '../components/Hero'
 import Location from '../components/Location'
+import OurSolution from '../components/OurSolution'
 import Services from '../components/Services'
 
 export default function Home() {
@@ -15,12 +16,15 @@ export default function Home() {
       <main>
        {/* === Hero section === */}
         <Hero />
-       {/* === About section === */}
-       <About />
        {/* === Services section === */}
-       <Services />
+        <Services />
+       {/* === Our Solution section === */}
+        <OurSolution />
        {/* === Location section */}
-       <Location />
+        <Location />
+       {/* === About section === */}
+        <About />
+      
       </main>
     </div>
   )

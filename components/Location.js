@@ -2,7 +2,7 @@ import React from 'react'
 
 const Location = () => {
   return (
-    <div id="location" className='services py-[20px] pb-[50px] px-[5%] bg-white'>
+    <div id="location" className='services py-[20px] pb-[50px] px-[5%] bg-slate-100'>
         <h3 className='font-bold text-center text-gray-700 text-2xl md:text-4xl pb-10'>Location</h3>
         <div className="text-center w-full">
         <div className="text-location">
