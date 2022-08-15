@@ -9,6 +9,8 @@ import AOS from 'aos'
 import 'aos/dist/aos.css';
 import Contact from '../components/Contact'
 
+
+
 export default function Home() {
   useEffect(()=>{
     AOS.init({
@@ -24,7 +26,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        
        {/* === Hero section === */}
         <Hero />
        {/* === About section === */}
