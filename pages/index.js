@@ -8,7 +8,7 @@ import Services from '../components/Services'
 import AOS from 'aos'
 import 'aos/dist/aos.css';
 import Contact from '../components/Contact'
-import Gallery from '../components/Gallery'
+// import Gallery from '../components/Gallery'
 
 
 
