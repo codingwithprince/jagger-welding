@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useState, useCallback } from 'react';
 import Marquee from "react-fast-marquee";
+import ImageViewer from 'react-simple-image-viewer';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
@@ -56,7 +57,7 @@ const Gallery = () => {
         </div>
         {isViewerOpen && (
         <div className='absolute mt-[100px]'>
-            {/* <ImageViewer
+            <ImageViewer
             backgroundStyle={{ 
               background: 'linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8))',
               zIndex: '100'}}
@@ -65,7 +66,7 @@ const Gallery = () => {
             disableScroll={ false }
             closeOnClickOutside={ true }
             onClose={ closeImageViewer }
-            /> */}
+            />
         </div>
       )}
   </div>
