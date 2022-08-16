@@ -3,10 +3,10 @@ import { IoLocationSharp, IoCall, IoMailSharp, IoGlobeSharp } from 'react-icons/
 const Contact = () => {
   return (
 
-    <div data-aos='up' id="contact" className='services py-[20px] mb-[20px] px-[5%] white'>
+    <div data-aos='up' id="contact" className='services pt-[20px] pb-[50px] px-[5%] white bg-slate-100'>
         <h3 data-aos="fade-up" className='font-bold text-center text-gray-700 text-2xl md:text-4xl pb-5'>Contact</h3>
         <div className="contact-section grid grid-cols-1 lg:grid-cols-2 justify-items-center">
-            <div data-aos='fade-up' className="contact-form mb-5 w-full px-5 md:w-[50%] lg:w-[60%] py-5  rounded-lg shadow-md">
+            <div data-aos='fade-up' className="contact-form bg-white mb-5 w-full px-5 md:w-[50%] lg:w-[60%] py-5  rounded-lg shadow-md">
                 <form>
                     <div className="mb-4">
                             <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="username" >

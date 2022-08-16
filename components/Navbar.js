@@ -6,7 +6,7 @@ import { BsFillGearFill } from 'react-icons/bs'
 import { FaPeopleCarry, FaBars } from 'react-icons/fa'
 import { IoIosConstruct, IoIosCloudDone } from 'react-icons/io'
 import { IoHome, IoLocationSharp } from 'react-icons/io5'
-import { MdWifiCalling3, MdPeopleAlt } from 'react-icons/md'
+import { MdWifiCalling3, MdPeopleAlt, MdPhotoSizeSelectActual } from 'react-icons/md'
 import { BiPhoneCall } from 'react-icons/bi'
 import { imageConfigDefault } from 'next/dist/shared/lib/image-config'
 import  { RiGalleryLine } from 'react-icons/ri'
@@ -27,28 +27,35 @@ const Navbar = () => {
         },
         {
             id:2,
+            name: 'About',
+            url: '#about',
+            icon: <MdPeopleAlt />
+        },
+        {
+            id:3,
             name: 'Services',
             url: '#services',
             icon: <IoIosConstruct />
         },
         {
-            id:3,
+            id:4,
+            name: 'Gallery',
+            url: '#gallery',
+            icon: <MdPhotoSizeSelectActual />
+        },
+        {
+            id:5,
             name: 'Location',
             url: '#location',
             icon: <IoLocationSharp />
         },
         {
-            id:4,
+            id:6,
             name: 'Contact',
             url: '#contact',
             icon: <MdWifiCalling3 />
-        },
-        {
-            id:5,
-            name: 'About',
-            url: '#about',
-            icon: <MdPeopleAlt />
         }
+        
     ]
    
   return (

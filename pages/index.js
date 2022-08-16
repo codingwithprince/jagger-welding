@@ -8,6 +8,7 @@ import Services from '../components/Services'
 import AOS from 'aos'
 import 'aos/dist/aos.css';
 import Contact from '../components/Contact'
+import Gallery from '../components/Gallery'
 
 
 
@@ -34,6 +35,8 @@ export default function Home() {
         <Services   />
        {/* === Our Solution section === */}
         <OurSolution />
+       {/* === Gallery section === */}
+        <Gallery />
        {/* === Location section */}
         <Location />
        {/* === Contact section === */}
