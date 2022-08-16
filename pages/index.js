@@ -36,7 +36,7 @@ export default function Home() {
        {/* === Our Solution section === */}
         <OurSolution />
        {/* === Gallery section === */}
-        <Gallery />
+        {/* <Gallery /> */}
        {/* === Location section */}
         <Location />
        {/* === Contact section === */}
