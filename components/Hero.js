@@ -7,9 +7,6 @@ import { IoCallSharp, IoMailSharp } from 'react-icons/io5';
 
 const images = [
     {
-      image: 'images/bg/PipeWelding.jpg',
-    },
-    {
         image: 'images/features/w-1.jpg',
     },
     {
@@ -34,7 +31,7 @@ const Hero = () => {
                   })
                 }
             </Carousel>
-            <div className='bg-black backdrop-blur-sm w-full bg-opacity-60 h-full flex items-center justify-center py-10 z-10 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
+            <div className='bg-black backdrop-blur-sm w-full bg-opacity-50 h-full flex items-center justify-center py-10 z-10 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
             <div className="text-overlay text-center  w-full md:w-[50%] p-2">
                 <h1 className='text-6xl inline-block py-2  w-full md:text-8xl animate-bounce uppercase russo-font gap-5 font-bold text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-300'>Jagger</h1>
                 <div className='text-6xl font-bold rounded-sm text-transparent bg-clip-text bg-gradient-to-t from-sky-600 to-sky-400  py-2 md:text-8xl uppercase russo-font'>
