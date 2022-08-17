@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useState, useCallback } from 'react';
 import Marquee from "react-fast-marquee";
+import Image from 'next/image'
 import ImageViewer from 'react-simple-image-viewer';
 
 const Gallery = () => {
@@ -19,23 +20,23 @@ const Gallery = () => {
   };
 
   const gallery = [
-    'images/gallery/g1.JPG',
-    'images/gallery/g2.JPG',
-    'images/gallery/g3.JPG',
-    'images/gallery/g4.JPG',
-    'images/gallery/g5.JPG',
-    'images/gallery/g6.JPG',
-    'images/gallery/g7.JPG',
-    'images/gallery/g8.JPG',
-    'images/gallery/g9.JPG',
-    'images/gallery/g10.JPG',
-    'images/gallery/g12.JPG',
-    'images/gallery/g13.JPG',
-    'images/gallery/g14.JPG',
-    'images/gallery/g15.JPG',
-    'images/gallery/g16.JPG',
-    'images/gallery/g17.JPG',
-    'images/gallery/g18.JPG',
+    '/images/gallery/g1.JPG',
+    '/images/gallery/g2.JPG',
+    '/images/gallery/g3.JPG',
+    '/images/gallery/g4.JPG',
+    '/images/gallery/g5.JPG',
+    '/images/gallery/g6.JPG',
+    '/images/gallery/g7.JPG',
+    '/images/gallery/g8.JPG',
+    '/images/gallery/g9.JPG',
+    '/images/gallery/g10.JPG',
+    '/images/gallery/g12.JPG',
+    '/images/gallery/g13.JPG',
+    '/images/gallery/g14.JPG',
+    '/images/gallery/g15.JPG',
+    '/images/gallery/g16.JPG',
+    '/images/gallery/g17.JPG',
+    '/images/gallery/g18.JPG',
   ]
  return (
     <div id='gallery' className='bg-slate-100 py-10'>
@@ -43,14 +44,14 @@ const Gallery = () => {
         <div data-aos='fade-up' className='py-5'>
             <Marquee speed={10} pauseOnHover={true} gradient={false} direction='right'>
                 {gallery.map((image , index) => (
-                    <img onClick={ () => openImageViewer(index) } className='shadow-md h-[200px] md:h-[300px] max-w-none object-cover mx-2' key={image} src={image} alt="picsum" />
+                    <img onClick={ () => openImageViewer(index) } className='shadow-md h-[200px] md:h-[300px] max-w-none object-cover mx-2' key={image} src={image} alt="picsum" layout='fill' />
                 ))}
             </Marquee>
-        </div>     
+        </div>   
         <div data-aos='fade-up' className='py-5'>
             <Marquee speed={5} pauseOnHover={true} gradient={false} direction='right'>
                 {gallery.map((image , index) => (
-                    <img onClick={ () => openImageViewer(index) } className='shadow-md h-[100px] md:h-[200px] max-w-none object-cover mx-2' key={image} src={image} alt="picsum" />
+                    <img onClick={ () => openImageViewer(index) } className='shadow-md h-[100px] md:h-[200px] max-w-none object-cover mx-2' key={image} src={image} alt="picsum"  />
                 )).reverse()}
             </Marquee>
         </div>  
