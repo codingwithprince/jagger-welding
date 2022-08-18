@@ -2,7 +2,10 @@
 import React, { useState, useCallback } from 'react';
 import Marquee from "react-fast-marquee";
 import Image from 'next/image'
+import Slider from "react-slick";
 import ImageViewer from 'react-simple-image-viewer';
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 
 const Gallery = () => {
 
@@ -38,23 +41,61 @@ const Gallery = () => {
     '/images/gallery/g17.JPG',
     '/images/gallery/g18.JPG',
   ]
+
+
+  var settings = {
+    autoplay: true,
+    autoplaySpeed: 3000,
+    infinite: true,
+    slidesToShow: 4,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  };
+
  return (
-    <div id='gallery' className='bg-slate-100 py-10'>
+    <div id='gallery' className='bg-slate-100 py-5 overflow-x-hidden'>
         <h3 data-aos="fade-up" className='font-bold text-center text-gray-700 text-2xl md:text-4xl pb-5'>Gallery</h3>
-        <div data-aos='fade-up' className='py-5'>
+        <div className="py-5">
+          <Slider {...settings}>
+              {gallery.map((image , index) => (
+                    <div key={index} className='overflow-x-hidden'>
+                      <Image width={600} height={420} onClick={ () => openImageViewer(index) } className='shadow-md object-cover' key={image} src={image} alt="picsum" />
+                    </div>
+                ))}
+          </Slider>
+        </div>
+        <div className='px-2'>
             <Marquee speed={10} pauseOnHover={true} gradient={false} direction='right'>
                 {gallery.map((image , index) => (
-                    <img onClick={ () => openImageViewer(index) } className='shadow-md h-[200px] md:h-[300px] max-w-none object-cover mx-2' key={image} src={image} alt="picsum" layout='fill' />
+                    <div key={index} className='p-2'>
+                      <Image width={250} height={130} onClick={ () => openImageViewer(index) } className='shadow-md object-cover' key={image} src={image} alt="picsum" />
+                    </div>
                 ))}
             </Marquee>
         </div>   
-        <div data-aos='fade-up' className='py-5'>
-            <Marquee speed={5} pauseOnHover={true} gradient={false} direction='right'>
-                {gallery.map((image , index) => (
-                    <img onClick={ () => openImageViewer(index) } className='shadow-md h-[100px] md:h-[200px] max-w-none object-cover mx-2' key={image} src={image} alt="picsum"  />
-                )).reverse()}
-            </Marquee>
-        </div>  
         {isViewerOpen && (
         <div className='absolute mt-[100px]'>
             <ImageViewer

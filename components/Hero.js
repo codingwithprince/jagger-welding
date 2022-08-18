@@ -1,19 +1,20 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import Image from 'next/image';
 import { Carousel } from 'react-responsive-carousel';
 import { TypeAnimation } from 'react-type-animation';
 import { IoCallSharp, IoMailSharp } from 'react-icons/io5';
 
 const images = [
     {
-        image: 'images/features/w-1.jpg',
+        image: '/images/features/w-1.jpg',
     },
     {
-        image: 'images/features/w-2.jpg',
+        image: '/images/features/w-2.jpg',
     },
     {
-        image: 'images/features/w-3.jpg',
+        image: '/images/features/w-3.jpg',
     }
 ];
 const Hero = () => {
@@ -24,7 +25,7 @@ const Hero = () => {
                   images.map(item => {
                     return(
                       <div key={item.id}>
-                       <img className='shadow-full object-cover h-[70vh]' src={item.image} alt='jagger-welding-man-welding'/>
+                       <Image layout='fill'  className='shadow-full object-cover h-[70vh]' src={item.image} alt='jagger-welding-man-welding'/>
                         {/* <p className="legend bg-pink-500">Jagger d.o.o</p> */}
                       </div>
                     )

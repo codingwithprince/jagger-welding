@@ -17,3 +17,7 @@ body{
 #about {
   scroll-behavior: smooth;
 }
+
+#gallery > div > div > div > div > div > div > div > span > img{
+  padding: 10px !important;
+}
