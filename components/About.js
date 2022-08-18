@@ -59,7 +59,8 @@ const About = () => {
                   images.map(item => {
                     return(
                       <div key={item.id}>
-                       <img className='shadow-full' src={item.src} alt='jagger-welding-man-welding'/>
+                        <Image className='object-cover' src={item.src} height={610} width={900} alt='' />
+                       {/* <img className='shadow-full' src={item.src} alt='jagger-welding-man-welding'/> */}
                         {/* <p className="legend bg-pink-500">Jagger d.o.o</p> */}
                       </div>
                     )

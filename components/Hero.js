@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import Image from 'next/image';
 import { Carousel } from 'react-responsive-carousel';
 import { TypeAnimation } from 'react-type-animation';
 import { IoCallSharp, IoMailSharp } from 'react-icons/io5';
